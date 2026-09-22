@@ -12,7 +12,6 @@
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
 function setup() {
-    createCanvas(400,400)
 
 }
 
@@ -21,22 +20,5 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-    background(205,205,205)
-
-    drawCat();
-}
-
-
-function cat(){
-    drawBody();
-    //drawCatEars();
-    //drawEyes();
-    //drawLegs();
-    //drawMouth();
-}
-
-function drawBody(){
-    push();
-    ellipse(50,50,80,60)
 
 }
