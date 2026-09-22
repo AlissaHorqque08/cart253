@@ -27,16 +27,24 @@ function draw() {
 }
 
 
-function cat(){
+function drawCat(){
+    drawCatEars();
     drawBody();
-    //drawCatEars();
     //drawEyes();
     //drawLegs();
     //drawMouth();
 }
 
+function drawCatEars(){
+    push();
+    
+  triangle(120,30,120,130,200,130);
+
+  triangle(280,30,200,130,280,130);
+}
+
 function drawBody(){
     push();
-    ellipse(50,50,80,60)
-
+    ellipse(200,200,300,250);
+    pop();
 }
