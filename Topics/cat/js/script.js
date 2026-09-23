@@ -32,6 +32,7 @@ function drawCat(){
     drawBody();
     drawEyes();
     drawMouth();
+    drawNose();
 }
 
 function drawCatEars(){
@@ -68,9 +69,18 @@ function drawEyes(){
   point(233, 135);
 }
 
-function drawMouth(){
+function drawNose(){
   push();
   strokeWeight(3);
   spline(200, 145, 186, 160, 176, 160, 163, 145);
+    pop();
 }
 
+
+function drawMouth(){
+    push();
+    strokeWeight(3);
+    spline(160,176,176,210,190,210,205,176);
+    spline(145,160,150,176,165,176,184,160);
+    spline(180,160,195,176,212,176,220,160);
+}
