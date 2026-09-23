@@ -29,18 +29,34 @@ function draw() {
 
 function drawCat(){
     drawCatEars();
+    drawLegs();
     drawBody();
     //drawEyes();
-    //drawLegs();
     //drawMouth();
 }
 
 function drawCatEars(){
     push();
-    
+
   triangle(120,30,120,130,200,130);
 
   triangle(280,30,200,130,280,130);
+
+  pop();
+}
+
+function drawLegs(){
+    push();
+    
+    triangle(120,300,150,310,120,350)
+
+    triangle(240,300,280,300,280,350)
+
+    triangle(145,300,180,310,165,350)
+
+    triangle(220,300,255,310,240,350)
+
+    pop();
 }
 
 function drawBody(){
