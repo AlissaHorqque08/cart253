@@ -1,9 +1,9 @@
 /**
- * Title of Project
- * Author Name
- * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Battle Cats
+ * Alissa Horqque
+ *
+ * For my simple drawing, I decided to draw a cat from my favourite game 
+ *
  */
 
 "use strict";
@@ -15,18 +15,21 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * My draw is going to add a stroke weight to the drawing and the general cat drawing
 */
 function draw() {
-    background(205,205,205)
+    background(181,253,255)
 
     strokeWeight(3);
 
-    drawCat();
+    drawCatDrawing();
 }
 
-
-function drawCat(){
+/**
+ * This includes the body, background, etc.
+ */
+function drawCatDrawing(){
+    drawGrass();
     drawCatEars();
     drawLegs();
     drawBody();
@@ -35,8 +38,19 @@ function drawCat(){
     drawNose();
 }
 
+function drawGrass(){
+  push();
+  noStroke();
+  fill(78,230,109);
+  rect(0,250,400,300);
+  pop();
+
+}
+
+
 function drawCatEars(){
-    push();
+  push();
+  fill()
   triangle(120,30,120,130,200,130);
 
   triangle(280,30,200,130,280,130);
@@ -83,4 +97,5 @@ function drawMouth(){
     spline(160,176,176,210,190,210,205,176);
     spline(145,160,150,176,165,176,184,160);
     spline(180,160,195,176,212,176,220,160);
+    pop();
 }
