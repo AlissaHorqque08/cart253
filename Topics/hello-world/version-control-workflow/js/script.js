@@ -31,7 +31,7 @@ function drawCat(){
     drawCatEars();
     drawLegs();
     drawBody();
-    //drawEyes();
+    drawEyes();
     //drawMouth();
 }
 
