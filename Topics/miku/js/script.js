@@ -1,15 +1,14 @@
 /**
- * Title of Project
- * Author Name
+ * Abstract Miku
+ * Alissa Horqque
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * A drawing of a famous character Hatsune miku with her pigtails being changed to exclamation points.
  */
 
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Setup will add no stroke and the canvas size
 */
 function setup() {
     createCanvas(400,400)
@@ -19,7 +18,7 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * The function will draw the background & my character
 */
 function draw() {
     background(88,93,94)
@@ -44,7 +43,7 @@ function drawHead(){
     circle(200,170,140);
     quad(155,245,  135,195,  265,195,  248,245);
     quad(180,280, 155, 245, 248, 245, 225, 280);
-    quad(225, 280, 180,280, 193,290, 213,290)
+    quad(225, 280, 180,280, 193,290, 213,290);
 
     pop();
 }
@@ -87,7 +86,7 @@ function drawHeadphones(){
 
 
     stroke(253,53,207);
-    strokeWeight(4)
+    strokeWeight(4);
 
     line(109,165,140,100);
 
@@ -117,13 +116,13 @@ function drawFace(){
     strokeWeight(3.2);
     stroke(0,0,0);
 
-    line(158,225,184,225)
-    line(220,225,245,225)
+    line(158,225,184,225);
+    line(220,225,245,225);
 
     
 
     fill(0,0,0);
-    circle(230,229,8.5, HALF_PI);
+    circle(230,229,8.5);
     circle(173,229,8.5);
 
     pop();
