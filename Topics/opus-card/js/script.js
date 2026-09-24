@@ -28,8 +28,11 @@ function draw() {
 }
 
 function drawMiku(){
+
+    drawHeadphones();
     drawFace();
     drawHair();
+    drawPigtails();
 }
 
 function drawFace(){
@@ -45,12 +48,14 @@ function drawFace(){
     pop();
 }
 
+
 function drawHair(){
 
     push();
-    fill(97,191,187)
+    fill(97,191,187);
 
-    rect(160,95,80,80)
+    //back hari 
+    rect(160,95,80,80);
 
     //mid bang
     quad(225,160, 175,160, 182,234, 219,234);
@@ -68,4 +73,40 @@ function drawHair(){
     triangle(245,240 ,270,230, 235,280);
     pop();
 
+}
+
+function drawHeadphones(){
+    push();
+
+    fill(0,0,0);
+    noStroke();
+
+     quad(210,125, 145,180, 100,160, 130,100);
+     quad(240,190, 240,110, 265,100, 300,160);
+
+
+    stroke(253,53,207);
+    strokeWeight(4)
+
+    line(109,165,140,100);
+
+    line(292,165,257,100);
+
+    pop();
+}
+
+function drawPigtails(){
+    push();
+    fill(97,191,187);
+
+    circle(60,75,75);
+    circle(340,75,75);
+
+    triangle(22,75, 98,75, 60,300);
+    triangle(302,75, 378,75, 340, 300);
+    
+    circle(60,350,40);
+    circle(340,350,40);
+
+    pop();
 }
