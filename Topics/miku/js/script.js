@@ -30,12 +30,13 @@ function draw() {
 function drawMiku(){
 
     drawHeadphones();
-    drawFace();
+    drawHead();
     drawHair();
     drawPigtails();
+    drawFace();
 }
 
-function drawFace(){
+function drawHead(){
 
     push();
 
@@ -107,6 +108,23 @@ function drawPigtails(){
     
     circle(60,350,40);
     circle(340,350,40);
+
+    pop();
+}
+
+function drawFace(){
+    push();
+    strokeWeight(3.2);
+    stroke(0,0,0);
+
+    line(158,225,184,225)
+    line(220,225,245,225)
+
+    
+
+    fill(0,0,0);
+    circle(230,229,8.5, HALF_PI);
+    circle(173,229,8.5);
 
     pop();
 }
