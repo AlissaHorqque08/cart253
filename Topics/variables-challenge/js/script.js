@@ -72,8 +72,8 @@ function draw() {
   //mrFurious.fill.r += mrFurious.fill.r.speed();
   fill(mrFurious.fill.r, mrFurious.fill.g, mrFurious.fill.b);
 
-  mrFurious.y += random(1,0);
-    mrFurious.x += random(1,0);
+    mrFurious.y += random(-1,1);
+    mrFurious.x += random(-1,1);
 
   ellipse(mrFurious.x, mrFurious.y, mrFurious.size);
   pop();
@@ -90,7 +90,12 @@ function draw() {
   fill("white");
   circle(bird.x, bird.y + bird.width * 0.5, bird.height);
   pop();
+
+  push();
+
+  mrFurious.size += 0.1;
 }
+
 
 
 
