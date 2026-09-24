@@ -1,6 +1,6 @@
 /**
  * Mr. Furious
- * Pippin Barr
+ * Anum, Alissa, Antony
  *
  * A guy who becomes visibly furious!
  */
@@ -22,13 +22,14 @@ let mrFurious = {
   }
 
 };
-
+    //adding a sky variable
 let sky = {
     r: 204, 
     g: 255, 
     b: 255
 };
 
+// adding a bird variable
 let bird = {
    x:50,
    y:50,
@@ -60,16 +61,13 @@ function draw() {
 
     bird.x += bird.speed;
 
-  
-//   mrFurious.fill.r = lerp(mrFurious.fill.r, 255,0.1);
   mrFurious.fill.g -= 1
   mrFurious.fill.b -= 1
-  
-  // Draw Mr. Furious as a coloured circle
-  push();
+
+    push();
   noStroke();
   fill(mrFurious.fill.r, mrFurious.fill.g, mrFurious.fill.b);
-  //mrFurious.fill.r += mrFurious.fill.r.speed();
+
   fill(mrFurious.fill.r, mrFurious.fill.g, mrFurious.fill.b);
 
     mrFurious.y += random(-1,1);
@@ -77,12 +75,6 @@ function draw() {
 
   ellipse(mrFurious.x, mrFurious.y, mrFurious.size);
   pop();
-
-//   push();
-//   ellipse(CENTER);
-//   noStroke();
-//   ellipse(mrFurious.x, mrFurious.y + mrFurious.width *  mrFurious.height * 1.0)
-
 
   push();
   rectMode(CENTER);
