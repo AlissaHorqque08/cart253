@@ -9,3 +9,9 @@ So time keeps moving, and everything slowly started to come along. Changing from
 
 The website at the beginning of the semeseter.
 ![Website_Sept_17](./images/beginner_page_CART_253.jpg)
+
+**Ｓｅｐｔｅｍｂｅｒ 24:** This project was beyond tiring. At the beginning of this week's challenge, I was already stressed out. I was confused on where the shapes would go, where they would end up, what shapes I could explore with! Working with three people alongside me definitely helped but it didn't solve my question on why? 
+
+To me there's always an answer to everything, especially when relating to comp arts. Computers don't work the way they want to, they are ordered with reason. So it didn't make sense to me with the shapes and such, I knew there had to be some mathimatical reason behind it. With starting this project I had the objective to learn what was going on. 
+
+I decided to tackle on a drawing of a cat. It didn't seem too hard, considering I had a reference to work off of. When I started, it seemed almost impossible. I just couldn't understand it. Until it all clicked. Smaller numbers to the upper left, and larger numbers to the down right. Yes a lot of trial and error seemed to continue but atleast I understood it better than before. The other two drawings were hard as well but atleast I knew why the computer seemed to act the way they did. Although a part of me wishes I could step out of my comfort zone, but now that I'm comfortable with JS, I'm not afraid to experiment even more.
