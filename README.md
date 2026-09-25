@@ -4,7 +4,7 @@
 **My purpose:** To be able to collect and obtain a website that showcases my prototyping work in CART 253, fall '26.
 
 # Ｊｏｕｒｎａｌ ｌｉｎｋ
-[Over here!](journal.md)
+[Over here!](https://github.com/AlissaHorqque08/cart253/blob/main/Topics/journal.md)
 
 
 # Ｐｒｏｔｏｔｙｐｅｓ
