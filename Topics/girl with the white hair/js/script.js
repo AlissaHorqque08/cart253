@@ -27,11 +27,20 @@ function draw() {
 }
 
 function drawGirl(){
-    
+
+    drawBackhair();
     drawBody();
     drawHair();
 }
 
+
+function drawBackhair(){
+    push();
+    fill(255,255,255);
+    quad(320,150, 230, 150, 120, 320, 240, 320);
+    quad(120,320, 240, 320, 320, 400, 0, 400)
+
+}
 function drawBody(){
     push();
     fill(38,255,212);  
@@ -64,6 +73,11 @@ function drawHair(){
     triangle(280,90, 280,230, 320,90)
     triangle(240,80, 210,70, 180,210)
 
-    
+    quad(320,100,325,300, 325,400, 235,400);
 
+    quad(280,20, 310,190, 380, 130, 340, 50);
+    
+    quad(280,20, 210, 40, 200, 90, 300, 120);
+
+    pop();
 }
