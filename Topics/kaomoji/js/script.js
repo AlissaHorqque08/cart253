@@ -18,13 +18,14 @@ let expression = 0;
 function setup() {
   createCanvas(300, 300);
 
+}
 
+function draw(){
   background(255);
-  drawBase();
-  drawExpressions();
 
-  // Draw a black bezier curve.
-  
+  drawBase();
+  drawExpressions(); 
+  drawText();
 
 }
 
@@ -48,12 +49,12 @@ function drawExpressions(){
     circle(230,85,25);
 
     //eyebrows
-    line(260,70,235,50)
-    line(40,70,70,50)
+    line(260,70,235,50);
+    line(40,70,70,50);
 
     //mouth
-    bezier(100,103,80,115,125,135,150,109)
-    bezier(200,103,210,115,185,135,150,109)
+    bezier(100,103,80,115,125,135,150,109);
+    bezier(200,103,210,115,185,135,150,109);
     }
 
     if (expression === 1) {
@@ -64,12 +65,12 @@ function drawExpressions(){
     circle(230,70,35);
 
     //blush
-    line(250,102,200,102)
-    line(250,115,200,115)
-    line(100,102,50,102)
-    line(100,115,50,115)
+    line(250,102,200,102);
+    line(250,115,200,115);
+    line(100,102,50,102);
+    line(100,115,50,115);
 
-    rect(115,120,70,100)
+    rect(115,120,70,100);
     }
 
 
@@ -77,18 +78,18 @@ function drawExpressions(){
     stroke(255,74,214);
     strokeWeight(5);
     //eyes
-    line(50,60,100,80)
-    line(250,60,200,80)
-    line(50,90,100,80)
-    line(250,90,200,80)
+    line(50,60,100,80);
+    line(250,60,200,80);
+    line(50,90,100,80);
+    line(250,90,200,80);
     //blush
-    line(250,102,200,102)
-    line(250,115,200,115)
+    line(250,102,200,102);
+    line(250,115,200,115);
 
-    line(100,102,50,102)
-    line(100,115,50,115)
+    line(100,102,50,102);
+    line(100,115,50,115);
     //smile
-    bezier(120,103,114,135,175,135,170,103)
+    bezier(120,103,114,135,175,135,170,103);
     //bezier(x1, y1, x2, y2, x3, y3, x4, y4)
     }
 }
@@ -99,4 +100,15 @@ function mousePressed(){
     if (expression > 2) {
         expression = 0;
     }
+}
+
+function drawText(){
+    push();
+    fill(255,74,214)
+    textSize(30)
+    strokeWeight(2)
+    textAlign(CENTER,CENTER);
+    text('Click me!', 150,30)
+    pop();
+
 }
