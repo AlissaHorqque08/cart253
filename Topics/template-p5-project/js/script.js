@@ -24,23 +24,61 @@ function setup() {
 
 
   background(255);
+  drawBase();
   drawNormal_expression();
   drawShocked_expression();
   drawMew_expression();
 
   // Draw a black bezier curve.
-  noFill();
+  
+
+}
+
+function drawBase() {
+
   stroke(255,74,214);
   strokeWeight(5);
   bezier(45, 10, 5, 30, -20, 145, 45, 200);
   bezier(260, 10, 300, 30, 320, 145, 260, 200);
 
-  //bezier(x1, y1, x2, y2, x3, y3, x4, y4)
-
 }
 
 function mousePressed(){
+    changeExpression();
+}
 
+function changeExpression(){
+    change++;
+    changeStage();
+}
+
+function changeStage(){
+    if (change >=6){
+        stage = 2;
+    } else if (change>=3){
+        stage = 1;
+    }else {
+        stage = 0;
+    }
+}
+
+function drawNormal_expression(){
+stroke(255,74,214);
+strokeWeight(5);
+//eyes
+line(50,60,100,80)
+line(250,60,200,80)
+line(50,90,100,80)
+line(250,90,200,80)
+//blush
+line(250,102,200,102)
+line(250,115,200,115)
+
+line(100,102,50,102)
+line(100,115,50,115)
+//smile
+bezier(120,103,114,135,175,135,170,103)
+  //bezier(x1, y1, x2, y2, x3, y3, x4, y4)
 
 }
 
