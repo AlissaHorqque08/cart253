@@ -1,15 +1,14 @@
 /**
- * Title of Project
- * Author Name
+ * A girl with white hair
+ * Alissa Horqque
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * A girl with white hair and teal contrasting skin against the red background
  */
 
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Creates the canvas and makes sure there's no stroke in the drawing
 */
 function setup() {
     createCanvas(400,400);
@@ -18,7 +17,7 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Beginning to draw the girl & add the red background
 */
 function draw() {
     background(255,38,38);

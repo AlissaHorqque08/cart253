@@ -2,7 +2,7 @@
  * Battle Cats
  * Alissa Horqque
  *
- * For my simple drawing, I decided to draw a cat from my favourite game 
+ * Experimenting with a cat from one of my favourite games named Battle cats!
  *
  */
 
