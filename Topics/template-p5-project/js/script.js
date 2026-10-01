@@ -52,6 +52,22 @@ function changeExpression(){
     changeStage();
 }
 
+function drawMew_expression(){
+        //eyes
+    stroke(255,74,214);
+    strokeWeight(5);
+    circle(70,85,25);
+    circle(230,85,25);
+
+    //eyebrows
+    line(260,70,235,50)
+    line(40,70,70,50)
+
+    //mouth
+    bezier(100,103,80,115,125,135,150,109)
+    bezier(200,103,210,115,185,135,150,109)
+}
+
 function drawShocked_expression(){
     //eyes
     stroke(255,74,214);
@@ -66,6 +82,8 @@ function drawShocked_expression(){
     line(100,115,50,115)
 
     rect(115,120,70,100)
+
+    
 
 }
 /**
