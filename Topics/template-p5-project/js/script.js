@@ -25,8 +25,8 @@ function setup() {
 
   background(255);
   drawBase();
-  drawNormal_expression();
-  drawShocked_expression();
+  //drawNormal_expression();
+  //drawShocked_expression();
   drawMew_expression();
 
   // Draw a black bezier curve.
@@ -52,6 +52,23 @@ function changeExpression(){
     changeStage();
 }
 
+function drawShocked_expression(){
+    //eyes
+    stroke(255,74,214);
+    strokeWeight(5);
+    circle(70,70,35);
+    circle(230,70,35);
+
+    //blush
+    line(250,102,200,102)
+    line(250,115,200,115)
+    line(100,102,50,102)
+    line(100,115,50,115)
+
+    rect(115,120,70,100)
+
+}
+/**
 function changeStage(){
     if (change >=6){
         stage = 2;
@@ -81,6 +98,7 @@ bezier(120,103,114,135,175,135,170,103)
   //bezier(x1, y1, x2, y2, x3, y3, x4, y4)
 
 }
+
 
 /**
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
