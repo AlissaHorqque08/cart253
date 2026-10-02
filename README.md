@@ -9,6 +9,8 @@
 
 # Ｐｒｏｔｏｔｙｐｅｓ
 
+# INSTRUCTIONS CHALLENGE
+
 # A girl with white hair 
 ![Screenshot_of_white_haired_girl](./Topics/images/girlwithwhitehair.png)
 
@@ -26,3 +28,9 @@
 
 [View Online!](https://alissahorqque08.github.io/cart253/Topics/miku/)
 [View Code!](https://github.com/AlissaHorqque08/cart253/blob/main/Topics/miku/js/script.js)
+
+# VARIABLES CHALLENGE
+
+# Kaomoji
+![Kaomoji_screenshot](./Topics/images/kaomoji.png)
+

@@ -65,7 +65,25 @@ function draw() {
         square.velocity.y = -square.velocity.y
     }
 
-    
+    if (square.x + square.size / 2 >= backgroundscreen.size) {
+    square.velocity.x *= -1;
+    changeColor();
+    }
+
+    if (square.x - square.size / 2 <= 0) {
+    square.velocity.x *= -1;
+    changeColor();
+    }
+
+    if (square.y + square.size / 2 >= backgroundscreen.size) {
+    square.velocity.y *= -1;
+    changeColor();
+    }
+
+    if (square.y - square.size / 2 <= 0) {
+    square.velocity.y *= -1;
+    changeColor();
+    }
 
     // Draw the square
     push();

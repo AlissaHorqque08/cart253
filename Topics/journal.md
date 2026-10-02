@@ -18,3 +18,9 @@ I decided to tackle on a drawing of a cat. It didn't seem too hard, considering 
 
 the cat.
 ![Screenshot_battle_cats](./images/cat.png)
+
+**Ｏｃｔｏｂｅｒ 1:** After last weeks project variables, I found myself working harder than before and yet working lighter. 
+
+I recognized that I already knew the basics of Javascript which made the rest of the projects way simpler, the only struggling part was actually animating stuff. Yet I found myself intrigued at the new combinations
+
+There are so many things you can do with Javascript. It's interesting to see what are new things to learn with this program. I know that I am still a beginner at these projects but I know that I am getting better which each step of the way.
