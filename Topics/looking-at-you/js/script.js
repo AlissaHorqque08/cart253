@@ -1,9 +1,9 @@
 /**
- * Title of Project
- * Author Name
+ * Looking at you
+ * Alissa Horqque
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * The pupils are looking straight at the cursor, 
+ * constrained by x,y commands to not leave the white eyes border
  */
 
 "use strict";
