@@ -34,3 +34,22 @@
 # Kaomoji
 ![Kaomoji_screenshot](./Topics/images/kaomoji.png)
 
+[View Online!](https://alissahorqque08.github.io/cart253/Topics/kaomoji/)
+
+[View Code!](https://github.com/AlissaHorqque08/cart253/blob/main/Topics/kaomoji/js/script.js)
+
+# Looking at you!
+
+![Lookingatyou_Screenshot](./Topics/images/lookingatyou.png)
+
+[View Online!](https://alissahorqque08.github.io/cart253/Topics/looking-at-you/)
+
+[View Code!](https://github.com/AlissaHorqque08/cart253/blob/main/Topics/looking-at-you/js/script.js)
+
+# Hitting the border
+
+![Hittingtheborder_Screenshot](./Topics/images/hittingtheborder.png)
+
+[View Online!](https://alissahorqque08.github.io/cart253/Topics/hitting-the-border/)
+
+[View Code!](https://github.com/AlissaHorqque08/cart253/blob/main/Topics/hitting-the-border/js/script.js)

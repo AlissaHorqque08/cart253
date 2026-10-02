@@ -1,9 +1,9 @@
 /**
- * Title of Project
- * Author Name
+ * Hitting the border
+ * Alissa Horqque
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * With each hit of the border, the square changes colors
+ * 
  */
 
 "use strict";
@@ -21,8 +21,8 @@ let backgroundscreen = {
 };
 
 let square = {
-    x:100,
-    y:250,
+    x:120,
+    y:270,
     size:100,
     velocity: {
         x:-2,
@@ -36,6 +36,9 @@ let square = {
         }
 
 };
+
+//Setting up the canvas, and added the velocity for the square to hit the border frequently. 
+// Including when the border hits the square, the square changes color.
 
 function setup() {
     createCanvas(400,400);

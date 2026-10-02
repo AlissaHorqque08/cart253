@@ -9,7 +9,7 @@
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Created the canvas and added no stroke
 */
 function setup() {
     createCanvas(400,400);
@@ -32,6 +32,9 @@ function drawEyes(){
     pop();
 }
 
+
+//added the function for the pupil to follow the mouse around, 
+// and constrain the pupils into the eye shape to make sure it doesnt go off screen.
 function drawPupil() {
 
     push();
