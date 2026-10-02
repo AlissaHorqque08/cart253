@@ -1,15 +1,14 @@
 /**
- * Title of Project
- * Author Name
+ * Kaomoji
+ * Alissa Horqque Ratto
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Click the face to change it! There are three options. Normal, Shocked, and a cat face.
  */
 
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Set up the canvas and commence the drawing process of the kaomoji
 */
 
 let expression = 0;
@@ -38,6 +37,7 @@ function drawBase() {
 
 }
 
+// The if expressions are there for the kaomoji and will change with the expression value
 
 function drawExpressions(){
 
@@ -93,6 +93,8 @@ function drawExpressions(){
     //bezier(x1, y1, x2, y2, x3, y3, x4, y4)
     }
 }
+
+//if the mouse presses then the expression changes.
 
 function mousePressed(){
     expression++;
