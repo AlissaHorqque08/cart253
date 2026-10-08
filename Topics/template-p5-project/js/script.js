@@ -8,10 +8,10 @@
 
 "use strict";
 
-/**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
-*/
+let drop = undefined;
+
 function setup() {
+    createCanvas(400,400);
 
 }
 
