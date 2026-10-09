@@ -53,3 +53,20 @@
 [View Online!](https://alissahorqque08.github.io/cart253/Topics/hitting-the-border/)
 
 [View Code!](https://github.com/AlissaHorqque08/cart253/blob/main/Topics/hitting-the-border/js/script.js)
+
+# CONDITIONALS CHALLENGE
+
+# Hachiware Sun
+![Hachiware_Screenshot](./Topics/images/hachiware_sun.png)
+[View Online!](https://alissahorqque08.github.io/cart253/Topics/hachiware_sun/)
+[View Code!](https://github.com/AlissaHorqque08/cart253/blob/main/Topics/hachiware_sun/js/script.js)
+
+# Loot Drop
+![Loot_Drop_Screenshot](./Topics/images/loot_drop.png)
+[View Online!](https://alissahorqque08.github.io/cart253/Topics/grab_an_item/)
+[View Code!](https://github.com/AlissaHorqque08/cart253/blob/main/Topics/grab_an_item/js/script.js)
+
+# Bryan, Point!
+![Bryan_point](./Topics/images/bryan_point.png)
+[View Online!](https://alissahorqque08.github.io/cart253/Topics/bryan_point/)
+[View Code!](https://github.com/AlissaHorqque08/cart253/blob/main/Topics/bryan_point/js/script.js)

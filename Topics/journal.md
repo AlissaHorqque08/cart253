@@ -24,3 +24,5 @@ the cat.
 I recognized that I already knew the basics of Javascript which made the rest of the projects way simpler, the only struggling part was actually animating stuff. Yet I found myself intrigued at the new combinations
 
 There are so many things you can do with Javascript. It's interesting to see what are new things to learn with this program. I know that I am still a beginner at these projects but I know that I am getting better which each step of the way.
+
+**Ｏｃｔｏｂｅｒ 8:** 
