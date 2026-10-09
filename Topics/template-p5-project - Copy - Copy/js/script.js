@@ -7,18 +7,21 @@
  */
 
 "use strict";
-let bryan = undefined
+let bryanImage = undefined
 
 let pointilism;
 
 
 async function setup() {
-    bryan = await loadImage("assets/images/bryan.jpg");
+    bryanImage = await loadImage("assets/images/bryan.jpg");
 
+    
     createCanvas(400,400);
 
+    pointilism = createGraphics(400,400);
+
     imageMode(CENTER);
-    bryan.resize(240,240);
+    bryanImage.resize(240,240);
 }
 
 
@@ -28,13 +31,22 @@ async function setup() {
 function draw() {
     background(255);
 
-    image(bryan, 200,200);
+    strokeWeight(3)
+    text("Hold me!", 150,300)
+    if (mouseIsPressed){
+    paintBryan();
+    }
+
+    image(pointilism, width/2, height/2)
 }
 
+
 function paintBryan(){
-    let sourceX = random(0, bryan.width);
-    let sourceY = random(0, bryan.height);
-    let c = bryan.get(sourceX, sourceY);
+    let sourceX = random(0, bryanImage.width);
+    let sourceY = random(0, bryanImage.height);
+    let c = bryanImage.get(sourceX, sourceY);
 
-
+    pointilism.stroke(c);
+    pointilism.strokeWeight(random(5,10));
+    pointilism.point(sourceX, sourceY);
 }
