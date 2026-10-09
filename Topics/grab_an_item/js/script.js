@@ -1,9 +1,8 @@
 /**
- * Title of Project
- * Author Name
+ * Grab an item.
+ * Alissa Horqque
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Dropping a loot every click of a buttom.
  */
 
 "use strict";
@@ -12,7 +11,7 @@ let drop = "Click to get a drop!";
 let dropImage = undefined;
 
 
-// Images for randomizing
+// Images
 let gwenimage = undefined;
 let rowdyimage = undefined;
 let estherimage = undefined;
@@ -31,7 +30,7 @@ async function preload() {
     samimage = await loadImage("assets/images/evil_book_sam.png");
 }
 
-
+// Creating canvas, loading images, and adding the function to randomizing every time the mouse is pressed.
 async function setup() {
     createCanvas(400,400);
 
@@ -69,7 +68,7 @@ function mousePressed(){
 }
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Creating the canvas, text, and positioning the images.
 */
 function draw() {
 

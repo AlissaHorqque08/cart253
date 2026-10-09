@@ -1,9 +1,9 @@
 /**
- * Title of Project
- * Author Name
+ * Hachiware Sun
+ * Alissa Horqque
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Using an example from "Conditionals and interactivity By Greg Benedis-Grab, Layla Quiñones" 
+ * I made it in my own way in using an image that rises.
  */
 
 "use strict";
@@ -25,6 +25,7 @@ async function preload(){
     hachiware.image = await loadImage("assets/images/hachiware.jpg");
 }
 
+//Setting up the canvas and the preloading for hachiware
 async function setup() {
 
     createCanvas(400,400);
@@ -43,6 +44,11 @@ function drawMountains(){
     pop();
 
 }
+
+
+/* Drawing the background that changes color and value. And added the "if" statement when the mosue is pressed, the image arises.
+* Also drawing the mountains. 
+*/
 
 function draw() {
     background(redVal,greenVal,0);

@@ -1,9 +1,8 @@
 /**
- * Title of Project
- * Author Name
+ * Bryan, Point!
+ * Alissa Horqque
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Whenever pressing down the button, the more the drawing paints itself in pointilism.
  */
 
 "use strict";
@@ -11,6 +10,9 @@ let bryanImage = undefined
 
 let pointilism;
 
+/**
+ * Setting up the function to create canvas, loading the iamge, creating the graphics for pointilism and resizing the bryan image.
+ */
 
 async function setup() {
     bryanImage = await loadImage("assets/images/bryan.jpg");
@@ -26,7 +28,7 @@ async function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Drawing the background, the text, and creating the "if" statement so whenever the mouse is pressed, the computer paints Bryan.
 */
 function draw() {
     background(255);
