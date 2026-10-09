@@ -17,12 +17,6 @@ let greenVal = 0;
 
 //image
 let hachiware = {
-
-    velocity: {
-        x:2,
-        y:1
-    },
-
     image: undefined
 
 }
