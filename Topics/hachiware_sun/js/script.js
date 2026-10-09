@@ -28,7 +28,7 @@ let hachiware = {
 }
 
 async function preload(){
-    hachiware.image = await loadImage("/assets/images/hachiware.jpg");
+    hachiware.image = await loadImage("assets/images/hachiware.jpg");
 }
 
 async function setup() {
@@ -38,10 +38,20 @@ async function setup() {
     await preload();
 }
 
+function drawMountains(){
+    push();
+    noStroke();
+    fill(146,126,59);
+    triangle(0,400,130,250,260,400);
+
+    fill(208,181,95);
+    triangle(160,400,280,250,400,400)
+    pop();
+
+}
 
 function draw() {
     background(redVal,greenVal,0);
-
     //image -- sun
 
     hachiware.image.resize(100,100);
@@ -57,6 +67,9 @@ function draw() {
         greenVal += 1;
 
     }
+
+    drawMountains();
+
 
 
 }
