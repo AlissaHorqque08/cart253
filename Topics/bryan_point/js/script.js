@@ -2,6 +2,7 @@
  * Bryan, Point!
  * Alissa Horqque
  * 
+ * Using the example "Animating with Media Objects By Joanne Amarisa, Jaleesa Trapp, Greg Benedis-Grab"
  * Whenever pressing down the button, the more the drawing paints itself in pointilism.
  */
 
