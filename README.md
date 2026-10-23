@@ -77,3 +77,15 @@
 [View Online!](https://alissahorqque08.github.io/cart253/Topics/bryan_point/)
 
 [View Code!](https://github.com/AlissaHorqque08/cart253/blob/main/Topics/bryan_point/js/script.js)
+
+# EVENTS CHALLENGE
+
+# Counting Bubbles
+
+![Count_bubbles_screenshot](./Topics/images/bubbles.png)
+
+# Candy Painted Nails
+![Candy_painted_nails](./Topics/images/candy_painted_nails.png)
+
+# Click the button!
+![Click_button](./Topics/images/click_button.png)
