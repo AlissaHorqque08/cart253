@@ -25,4 +25,6 @@ I recognized that I already knew the basics of Javascript which made the rest of
 
 There are so many things you can do with Javascript. It's interesting to see what are new things to learn with this program. I know that I am still a beginner at these projects but I know that I am getting better which each step of the way.
 
-**Ｏｃｔｏｂｅｒ 8:** 
+**Ｏｃｔｏｂｅｒ 8:** This week's prototypes weren't terrible. Although unlike the others, I did feel slightly unmotivated. I wasn't sure what I wanted to do. My ideas went blank. Conditionals ment that functions would be triggered via user interactions. 
+
+Luckily with the use of P5JS's website. I was able to make something, with the use of these examples. I was able to still learn something new but manage to twist it in my own way.
