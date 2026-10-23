@@ -28,3 +28,7 @@ There are so many things you can do with Javascript. It's interesting to see wha
 **Ｏｃｔｏｂｅｒ 8:** This week's prototypes weren't terrible. Although unlike the others, I did feel slightly unmotivated. I wasn't sure what I wanted to do. My ideas went blank. Conditionals ment that functions would be triggered via user interactions. 
 
 Luckily with the use of P5JS's website. I was able to make something, with the use of these examples. I was able to still learn something new but manage to twist it in my own way.
+
+**Ｏｃｔｏｂｅｒ 23:** A stressful week. I ended up turning this assignment way too late, not allowing me to reach my full potential while creating these prototypes. I'm disappointed in myself but it won't push away that I still learned valuable basics. This time around I was creating activites that react to the user. 
+
+My favourite one was probably the new word clicker. It was interesting not only experimenting with text but with hue as well. But I regret not allowing myself to have more time with this project once more. In the future, I hope to invest more on these prototypes and becoming more bold with JavaScript.

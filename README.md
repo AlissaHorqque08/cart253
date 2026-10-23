@@ -84,8 +84,22 @@
 
 ![Count_bubbles_screenshot](./Topics/images/bubbles.png)
 
+[View Online!](https://alissahorqque08.github.io/cart253/Topics/counting_bubbles/)
+
+[View Code!](https://github.com/AlissaHorqque08/cart253/blob/main/Topics/counting_bubbles/js/script.js)
+
+
 # Candy Painted Nails
 ![Candy_painted_nails](./Topics/images/candy_painted_nails.png)
 
+[View Online!](https://alissahorqque08.github.io/cart253/Topics/candy-painted-nails/)
+
+[View Code!](https://github.com/AlissaHorqque08/cart253/blob/main/Topics/candy-painted-nails/js/script.js)
+
+
 # Click the button!
 ![Click_button](./Topics/images/click_button.png)
+
+[View Online!](https://alissahorqque08.github.io/cart253/Topics/click-button/)
+
+[View Code!](https://github.com/AlissaHorqque08/cart253/blob/main/Topics/click-button/js/script.js)
