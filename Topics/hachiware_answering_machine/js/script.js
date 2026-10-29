@@ -4,6 +4,7 @@
  * 
  * Using an example from "Conditionals and interactivity By Greg Benedis-Grab, Layla Quiñones" 
  * I made it in my own way in using an image that rises.
+ * In addition, when hachiware rises to y = 100 then hachiware asks a question to you if you like them or not.
  */
 
 "use strict";
