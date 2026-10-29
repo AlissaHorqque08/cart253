@@ -1,12 +1,13 @@
 /**
- * Title of Project
- * Author Name
+ * Click the button
+ * Alissa Horqque
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Clicking the button, the button increases until it explodes.
  */
 
 "use strict";
+
+// Creating the button, and video variable.
 
 const button = {
 
@@ -19,9 +20,11 @@ const button = {
 
 let video;
 let videoStarted = false;
+
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Setting up the video URL, creating canvas, and hiding video 
 */
+
 function setup() {
     createCanvas(400,400)
     video = createVideo(['assets/explosion.mov']);
@@ -29,7 +32,7 @@ function setup() {
     video.hide();
 }
 
-
+// Drawing the background, button, and importing video.
 function draw() {
     background(71,54,52);
 
@@ -57,7 +60,7 @@ function drawText() {
     pop();
 }
 
-
+// Function mouse pressing, when reaches a certain size it explodes.
 function mousePressed(){
     const d = dist(mouseX, mouseY, button.x, button.y);
     const overlap = (d < button.size / 2);
