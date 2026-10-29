@@ -15,6 +15,9 @@ let sunHeight = 400;
 let redVal = 0;
 let greenVal = 0;
 
+// Choices
+let choiceRadio;
+
 //image
 let hachiware = {
     image: undefined
@@ -29,6 +32,14 @@ async function preload(){
 async function setup() {
 
     createCanvas(400,400);
+
+    choiceRadio = createRadio();
+    choiceRadio.position=(250,50);
+
+    choiceRadio.option('Yes');
+    choiceRadio.option('No');
+
+    choiceRadio.hide();
 
     await preload();
 
@@ -69,6 +80,14 @@ function draw() {
 
     }
 
+    if (sunHeight<=100) {
+        textSize(20);
+        text("Do you like Hachiware?", 30, 50,)
+        choiceRadio.show();
+    }
+    else {
+        choiceRadio.hide();
+    }
     drawMountains();
 }
 
