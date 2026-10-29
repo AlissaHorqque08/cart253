@@ -21,7 +21,6 @@ let choiceRadio;
 //image
 let hachiware = {
     image: undefined
-
 }
 
 async function preload(){
@@ -80,9 +79,19 @@ function draw() {
 
     }
 
-    if (sunHeight<=100) {
+    if (sunHeight <= 100) {
         textSize(20);
-        text("Do you like Hachiware?", 30, 50,)
+
+        if (choiceRadio.value() === 'Yes') {
+            text("Good.", 30, 250);
+        }
+        else if (choiceRadio.value() === 'No') {
+            text("Death will rain among you.", 30, 250);
+        }
+        else {
+            text("Do you like Hachiware?", 30, 250);
+        }
+
         choiceRadio.show();
     }
     else {
