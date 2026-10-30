@@ -1,11 +1,13 @@
 /**
- * Title of Project
- * Author Name
+ * Rainbow Square
+ * Alissa Horqque
  * 
- * once img is imported then the image moves around the canvas
+ * Being able to use the examples from the hitting-the-border project
+ * The user must import the image and then click on the canvas to move it across the square
  */
 
 "use strict";
+
 
 let squarePositionX = 200;
 let squarePositionY = 200;
@@ -27,7 +29,7 @@ let img = undefined;
 
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Allowing the imported image to cover the canvas
 */
 function setup() {
     let dropArea = createCanvas(400,400);
@@ -48,7 +50,8 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * The square for a border (To color change) 
+ * Also when the mouse is pressed for the image to move around the canvas.
 */
 function draw() {
     background(255);
@@ -60,7 +63,8 @@ function draw() {
 
     if (img !== undefined){
 
-    
+
+// this is how the images moves around the screen
     if (mouseIsPressed === true){
 
     squarePositionX = squarePositionX + squareSpeedX;
@@ -68,18 +72,20 @@ function draw() {
 
     squareHue = squareHue + 1;
     }
-
+// this is how it changes colors
     if (squareHue >= 360){
         squareHue = 0;
     }
     
-
+// If it hits the top and bottom border
     
 if (squarePositionY + 40 >= squareY + squareSize ||
     squarePositionY - 40 <= squareY) {
 
     squareSpeedY = squareSpeedY * -1;
 }
+
+// If it hits the left and right border
 
 if (squarePositionX + 40 >= squareX + squareSize ||
     squarePositionX - 40 <= squareX) {
@@ -108,7 +114,7 @@ function drawSquare(){
 
 }
 
-
+// how the image gets imported.
 function gotFile(file){
     if (file.type === 'image'){
         img = createImg(file.data, '');
