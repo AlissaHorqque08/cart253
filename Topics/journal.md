@@ -32,3 +32,9 @@ Luckily with the use of P5JS's website. I was able to make something, with the u
 **Ｏｃｔｏｂｅｒ 23:** A stressful week. I ended up turning this assignment way too late, not allowing me to reach my full potential while creating these prototypes. I'm disappointed in myself but it won't push away that I still learned valuable basics. This time around I was creating activites that react to the user. 
 
 My favourite one was probably the new word clicker. It was interesting not only experimenting with text but with hue as well. But I regret not allowing myself to have more time with this project once more. In the future, I hope to invest more on these prototypes and becoming more bold with JavaScript.
+
+**Ｏｃｔｏｂｅｒ 29:** This pack of challenges I feel way more confident in. I'm glad I was able to experiment way more with this project by being able to take old ideas and revamping into something new.
+
+I took the projects, hachiware & the tv screen to make into something new. The hachiware when reaching a certain height now asks you a question using the radio function. Meanwhile the tv screen is now renewed into the rainbow square. Still moving across corner to corner, but the square has now changed into an image file that the user can import. The color changing while the image moves.
+
+The third project was simply moving a donut using an example from P5JS, although it was nice to learn more about the 3D functions of javascript. This week for me was way more unique, then the rest of the other weeks. I feel proud of what I have made and I'm looking forward to experimenting with way more complex coding. 
