@@ -103,3 +103,29 @@
 [View Online!](https://alissahorqque08.github.io/cart253/Topics/click-button/)
 
 [View Code!](https://github.com/AlissaHorqque08/cart253/blob/main/Topics/click-button/js/script.js)
+
+# FUNCTIONS CHALLENGE
+
+# Answer me.
+
+![Answer_ME!](./Topics/images/answer_me.png)
+
+[View Online!](https://alissahorqque08.github.io/cart253/Topics/hachiware_answering_machine/)
+
+[View Code!](https://github.com/AlissaHorqque08/cart253/blob/main/Topics/hachiware_answering_machine/js/script.js)
+
+# Moving a rotating donut
+
+![Moving_A_Rotating_Donut](./Topics/images/moving_a_rotating_donut.png)
+
+[View Online!](https://alissahorqque08.github.io/cart253/Topics/moving_a_rotating_donut/)
+
+[View Code!](https://github.com/AlissaHorqque08/cart253/blob/main/Topics/moving_a_rotating_donut/js/script.js)
+
+# Rainbow square
+
+![Rainbow_Square](./Topics/images/rainbow_square.png)
+
+[View Online!](https://alissahorqque08.github.io/cart253/Topics/rainbow_square/)
+
+[View Code!](https://github.com/AlissaHorqque08/cart253/blob/main/Topics/rainbow_square/js/script.js)
