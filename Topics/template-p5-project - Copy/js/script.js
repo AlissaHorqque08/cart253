@@ -1,9 +1,13 @@
 /**
- * Title of Project
- * Author Name
+ * Moving a rotating donut 
+ * Alissa Horqque
  * 
  * Using the template named "Geometries" revised by Caleb Foss, and edited by p5.js Contributors.
- */
+   Also using the example from Mr. Pippinbarr p5js projects "Moving stones"
+   
+   I was able to create something using both of those templates to make the user move a constantly rotating 3D object.
+*/
+
 
 "use strict";
 
