@@ -10,74 +10,108 @@
 "use strict";
 
 let balls = [];
-let ball = undefined;
+let currentBallNumber;
 
-function setup(){
-    createCanvas(400,400);
-
-    ball = createBall();
+function setup() {
+    createCanvas(400, 400);
 }
 
-function createBall(){
+function createBall(x, y) {
 
-      const newBall = {
-    // Position and dimensions
-    x: 200,
-    y: 200,
-    size: 20,
-    // Colour
-    fill: {
-        r: random(255),
-        g: random(255),
-        b: random(255)
-    },
-    // Movement
-    velocity: {
-      x: random(-5, 5),
-      y: random(-5, 5)
+    const newBall = {
+        x: x,
+        y: y,
+        size: 20,
+
+        fill: {
+            r: random(255),
+            g: random(255),
+            b: random(255)
+        },
+
+        number: currentBallNumber,
+        velocity: {
+            x: random(-5, 5),
+            y: random(-5, 5)
+        }
+    };
+
+    return newBall;
+}
+
+function draw() {
+    background(0);
+
+    for (let ball of balls) {
+        moveBall(ball);
+        bounceBall(ball);
+        drawBall(ball);
     }
-  };
-  return newBall;
 }
 
-function draw(){
-    background(255);
-    
-  for (let ball of balls) {
-  moveBall(ball);
-  bounceBall(ball);
-  drawBall(ball);
-}
-}
-
-function moveBall(ball){
+function moveBall(ball) {
     ball.x += ball.velocity.x;
     ball.y += ball.velocity.y;
 }
 
 function bounceBall(ball) {
-  // Check if the ball has reached the left or right
-  const bounceX = (ball.x > width || ball.x < 0);
-  // Check if the ball has reached the top or bottom
-  const bounceY = (ball.y > height || ball.y < 0);
-  
-  // Handle bouncing horizontally
-  if (bounceX) {
-    ball.velocity.x *= -1;
-  }
-  // Handle bouncing vertically
-  if (bounceY) {
-    ball.velocity.y *= -1;
-  }
+
+    if (ball.x > width - ball.size / 2 ||
+        ball.x < ball.size / 2) {
+        ball.velocity.x *= -1;
+    }
+
+    if (ball.y > height - ball.size / 2 ||
+        ball.y < ball.size / 2) {
+        ball.velocity.y *= -1;
+    }
 }
 
-/**
- * Draw the ball on the canvas
- */
 function drawBall(ball) {
-  push();
-  noStroke();
-  fill(ball.fill);
-  ellipse(ball.x, ball.y, ball.size);
-  pop();
+
+    push();
+    noStroke();
+    fill(ball.fill.r, ball.fill.g, ball.fill.b);
+    ellipse(ball.x, ball.y, ball.size);
+
+    fill("white");
+    textSize(12);
+    textAlign(CENTER, CENTER);
+
+    text(ball.number, ball.x, ball.y);
+
+    pop();
+}
+
+function keyPressed() {
+
+    if (key === '1') {
+        currentBallNumber = 1;
+        let newBall = createBall(mouseX, mouseY);
+        balls.push(newBall);
+    }
+
+    if (key === '2') {
+        currentBallNumber = 2;
+        let newBall = createBall(mouseX, mouseY);
+        balls.push(newBall);
+    }
+
+    if (key === '3') {
+        currentBallNumber = 3;
+        let newBall = createBall(mouseX, mouseY);
+        balls.push(newBall);
+    }
+
+    if (key === '4') {
+        currentBallNumber = 4;
+        let newBall = createBall(mouseX, mouseY);
+        balls.push(newBall);
+    }
+
+    if (key === '5') {
+        currentBallNumber = 5;
+        let newBall = createBall(mouseX, mouseY);
+        balls.push(newBall);
+    }
 }
