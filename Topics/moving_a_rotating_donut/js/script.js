@@ -15,7 +15,7 @@ let torus1;
 
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Creating canvas, allowing anglemode for 3d movement, and normalmaterial for the torus.
 */
 async function setup() {
 createCanvas(500,500, WEBGL);
@@ -29,6 +29,7 @@ torus1 = createTorus(250,250,50);
 
 }
 
+// Declaring torus
 
 function createTorus(x,y,size){
     const torus = {
@@ -44,7 +45,7 @@ function createTorus(x,y,size){
 }
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Updating torus as it moves & programming it to draw the torus
 */
 function draw() {
     background(255,255,255);
@@ -58,6 +59,7 @@ function updateTorus(torus){
     moveTorus(torus);
 }
 
+// How the torus moves across the screen VIA mouse
 function applyForces(torus){
     torus.velocity.x *= 0.95;
     torus.velocity.y *= 0.95;   
@@ -76,11 +78,13 @@ function applyForces(torus){
     }
 }
 
+
 function moveTorus(torus){
     torus.x += torus.velocity.x;
     torus.y += torus.velocity.y;
 }
 
+// Drawing the torus
 function drawTorus(torusObject){
     push();
     translate(
@@ -94,6 +98,7 @@ function drawTorus(torusObject){
     pop();
 }
 
+// The way it rotates.
 function rotateWithFrameCount(){
     rotateZ(frameCount);
     rotateX(frameCount);
