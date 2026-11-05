@@ -25,9 +25,9 @@ function setup() {
 
 function createBall() {
     const newBall = {
-    x: 200,
-    y: 200,
-    size: 20,
+    x: follower.x,
+    y: follower.y,
+    size: follower.diameter,
     // Colour
     fill: "rgb(251, 251, 250)",
     // Movement
@@ -36,6 +36,7 @@ function createBall() {
       y: random(-5, 5)
     }
     };
+    return newBall;
 }
 
 function draw() {
@@ -51,6 +52,9 @@ function draw() {
         let shade = map(i,0,follower.trail.length, 50, 255);
     }
 
-    
-
+    for (let ball of balls) {
+    moveBall(ball);
+    bounceBall(ball);
+    drawBall(ball);
+    }       
 }
