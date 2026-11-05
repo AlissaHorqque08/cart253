@@ -49,7 +49,6 @@ function draw() {
     for (let i = 0; i < follower.trail.length; i++){
         let ball = follower.trail[i];
 
-        let shade = map(i,0,follower.trail.length, 50, 255);
     }
 
     for (let ball of balls) {
@@ -58,3 +57,22 @@ function draw() {
     drawBall(ball);
     }       
 }
+
+
+function moveBall(ball) {
+  ball.x += ball.velocity.x;
+  ball.y += ball.velocity.y;
+}
+
+function drawBall(ball) {
+  push();
+  noStroke();
+  fill(255);
+  ellipse(follower.x, follower.y, follower.diameter);
+  pop();
+}
+
+follower.trail.push({
+    x: follower.x,
+    y: follower.y
+});
