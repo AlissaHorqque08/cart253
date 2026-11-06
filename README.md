@@ -133,7 +133,22 @@
 # ARRAYS CHALLENGE
 
 # Number balls
+![Number_balls!](./Topics/images/number_balls.png)
+
+[View Online!](https://alissahorqque08.github.io/cart253/Topics/number%20balls/)
+
+[View Code!](https://github.com/AlissaHorqque08/cart253/blob/main/Topics/number%20balls/js/script.js)
 
 # Revealing
+![Revealing](./Topics/images/revealing.png)
+
+[View Online!](https://alissahorqque08.github.io/cart253/Topics/revealing/)
+
+[View Code!](https://github.com/AlissaHorqque08/cart253/blob/main/Topics/revealing/js/script.js)
 
 # RANTING !!
+![RANTING!](./Topics/images/ranting.png)
+
+[View Online!](https://alissahorqque08.github.io/cart253/Topics/ranting/)
+
+[View Code!](https://github.com/AlissaHorqque08/cart253/blob/main/Topics/ranting/js/script.js)
