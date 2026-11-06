@@ -29,14 +29,39 @@ const story = {
                 options: [
                     {
                     text: "Go die i HATE u",
-                    toScene: "why u so mean"
-                    }
+                    toScene: "whyusomean",
+                    keyCode: 65,
+                    keyDisplay: "A"
+                },
+                {
+                    text: "Like ok sighh",
+                    toScene: "yayty",
+                    keyCode: 66,
+                    keyDisplay: "B"
+                }
                 ]
             }
 
         ]
+    },
+
+    whyusomean: {
+        dialog: [
+            {
+                type: "speech",
+                name: "Evan",
+                speech: "Why you so mean?!"
+            },
+            {
+                type: "speech",
+                name: "Gwen",
+                speech: "lock in bruv."
+            }
+        ]
     }
 }
+
+
 
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
