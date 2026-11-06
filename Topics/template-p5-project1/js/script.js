@@ -7,102 +7,127 @@
  */
 
 "use strict";
-
-let bg = {
-    image: undefined
-}
-
-function preload(){
-    bg.image = loadImage(
-        "assets/images/mainoffice.png",
-        function(){
-            console.log("Image loaded successfully!");
-        },
-        function(error){
-            console.log("Image failed to load:", error);
-        }
-    );
-}
-
 const story = {
     currentScene: "discussion",
     index: 0,
-    scenes: {
-        discussion: {
-        dialog: [
-                {
-                    type: "speech",
-                    name: "Gwen",
-                    speech: "Hey!"
-                },
+        scenes: {
+            discussion: {
+            dialog: [
+                    {
+                        type: "speech",
+                        name: "Gwen",
+                        speech: "Hey!",
+                        image: "gwenNormal"
+                    },
+                    {
+                        type: "speech",
+                        name: "Evan",
+                        speech: "Mind helping me out?",
+                        image: "evanGenuine"
+                    },
+                    {
+                        type: "choice",
+                        name: "Gwen",
+                    
+                        options: [
+                            {
+                            text: "Go die i HATE u",
+                            toScene: "whyusomean",
+                            keyCode: 65,
+                            keyDisplay: "A"
+                        },
+                        {
+                            text: "Like ok sighh",
+                            toScene: "yayty",
+                            keyCode: 66,
+                            keyDisplay: "B"
+                        }
+                    ]
+                }
+
+            ]
+        },
+
+        whyusomean: {
+            dialog: [
                 {
                     type: "speech",
                     name: "Evan",
-                    speech: "Mind helping me out?"
+                    speech: "Why you so mean?!",
+                    image: "evanSad"
                 },
                 {
-                    type: "choice",
+                    type: "speech",
                     name: "Gwen",
-                    options: [
-                        {
-                        text: "Go die i HATE u",
-                        toScene: "whyusomean",
-                        keyCode: 65,
-                        keyDisplay: "A"
-                    },
-                    {
-                        text: "Like ok sighh",
-                        toScene: "yayty",
-                        keyCode: 66,
-                        keyDisplay: "B"
-                    }
-                ]
-            }
+                    speech: "lock in bruv.",
+                    image: "gwenConfused"
+                }
+            ]
+        },
 
-        ]
+        yayty: {
+            dialog: [
+                {
+                    type: "speech",
+                    name: "Evan",
+                    speech: "Yay thank you my good friend gwen",
+                    image: "evanImright"
+                },
+                {
+                    type: "speech",
+                    name: "Gwen",
+                    speech: "yayyyyyyy.",
+                    image: "gwenKao"
+                }
+            ]
+        },
     },
-
-    whyusomean: {
-        dialog: [
-            {
-                type: "speech",
-                name: "Evan",
-                speech: "Why you so mean?!"
+    
+        images: {
+            gwenNormal: {
+                path: "assets/images/GwenNormal.png",
+                image: undefined
             },
-            {
-                type: "speech",
-                name: "Gwen",
-                speech: "lock in bruv."
-            }
-        ]
-    },
-
-    yayty: {
-        dialog: [
-            {
-                type: "speech",
-                name: "Evan",
-                speech: "Yay thank you my good friend gwen"
+            gwenConfused: {
+                path: "assets/images/GwenConfuse.png",
+                image: undefined
             },
-            {
-                type: "speech",
-                name: "Gwen",
-                speech: "yayyyyyyy."
+
+            gwenKao: {
+                path: "assets/images/GwenConfuse.png",
+                image: undefined
+            },
+
+            evanGenuine: {
+                path: "assets/images/evan gen.png",
+                image: undefined
+            },
+
+            evanSad: {
+                path: "assets/images/evan sad.png",
+                image: undefined
+            },
+
+            evanImright: {
+                path: "assets/images/evan imright.png",
+                image: undefined
             }
-        ]
-    }
-}
+
+
+        }
 };
 
+function preload(){
+    story.images.gwenNormal.image = loadImage(story.images.gwenNormal.path);
 
+}
 
 function setup(){
     createCanvas(400,400);
 }
 
 function draw(){
-    background(255,23,25);
-    image(bg.image, 150, 20);
+    background(255);
     
     displayDialog();
 }
@@ -113,10 +138,15 @@ function displayDialog(){
 
     const element = currentScene.dialog[story.index];
 
+
     let displayText="";
     if (element.type === "speech"){
         displayText = element.name + ":" +
         element.speech;
+
+        const faceImage = story.images[element.image].image;
+
+        image(faceImage,100,50,200,200)
     }
     else if (element.type === "choice"){
         for(let option of element.options){
