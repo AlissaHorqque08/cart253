@@ -1,15 +1,21 @@
 /**
- * Title of Project
- * Author Name
+ * RANTINGG
+ * Alissa Horqque
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * A ranting speech given by my MC gwen. Heavily inspired by "Friends, Romans, Countrymen" by Pippinsbarr
  */
 
 "use strict";
 
+// The speech gwen gives.
 const speech = [
-    "nelelrjerenre"
+    "What the hell!?",
+    "This entire situation is SO messed up.",
+    "Im already so tired,",
+    "Even if I did little to NO work so far!",
+    "I'm going insane!!",
+    "I wanna go home! I hate my life!",
+    "Why did I think going outside was a good IDEA!?"
 ]
 
 let speechIndex = 0;
@@ -25,11 +31,13 @@ let box = {
 
 let gwenImage = undefined;
 
+// Creating canvas and background image.
 async function setup(){
     createCanvas(1800,1002);
 
     gwenImage = await loadImage("assets/images/crying_bathroom.PNG");
 }
+
 
 function draw(){
     background(0);
@@ -39,6 +47,7 @@ function draw(){
     showDialog();
 }
 
+// The box created, and the text increases which changes the text with each mouse pressed.
 function showDialog(){
     push();
     fill(0);

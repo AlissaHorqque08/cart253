@@ -9,15 +9,18 @@
 
 "use strict";
 
+// Creating balls, and the caption to show instructions.
 let balls = [];
 let currentBallNumber;
 let caption = 'Point, and press any number between 1-5!'
 
+// Created canvas
 function setup() {
     createCanvas(400, 400);
     fill('white');
 }
 
+// Creating the ball
 function createBall(x, y) {
 
     const newBall = {
@@ -41,6 +44,7 @@ function createBall(x, y) {
     return newBall;
 }
 
+// Background, caption, and the function for the balls
 function draw() {
     background(0);
 
@@ -53,11 +57,12 @@ function draw() {
     }
 }
 
+// How the ball moves around
 function moveBall(ball) {
     ball.x += ball.velocity.x;
     ball.y += ball.velocity.y;
 }
-
+// Constraining the ball inside the canvas
 function bounceBall(ball) {
 
     if (ball.x > width - ball.size / 2 ||
@@ -71,6 +76,7 @@ function bounceBall(ball) {
     }
 }
 
+// Drawing ball, randomized colors, and the text numbers.
 function drawBall(ball) {
 
     push();
@@ -87,6 +93,7 @@ function drawBall(ball) {
     pop();
 }
 
+// Each time a key is pressed then a different ball is spawned with that number.
 function keyPressed() {
 
     if (key === '1') {

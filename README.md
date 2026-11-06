@@ -129,3 +129,11 @@
 [View Online!](https://alissahorqque08.github.io/cart253/Topics/rainbow_square/)
 
 [View Code!](https://github.com/AlissaHorqque08/cart253/blob/main/Topics/rainbow_square/js/script.js)
+
+# ARRAYS CHALLENGE
+
+# Number balls
+
+# Revealing
+
+# RANTING !!
