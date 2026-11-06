@@ -1,8 +1,8 @@
 /**
- * Title of Project
- * Author Name
+ * Number balls
+ * Alissa H
  * 
- * change of plans: which each key pressed depending on which number, summon a ball with a randomized number and make it bounce around
+ * Which each key pressed depending on which number, summon a ball with a randomized number and make it bounce around
  * 
  *
  */
@@ -11,9 +11,11 @@
 
 let balls = [];
 let currentBallNumber;
+let caption = 'Point, and press any number between 1-5!'
 
 function setup() {
     createCanvas(400, 400);
+    fill('white');
 }
 
 function createBall(x, y) {
@@ -41,6 +43,8 @@ function createBall(x, y) {
 
 function draw() {
     background(0);
+
+    text(caption, 150,50);
 
     for (let ball of balls) {
         moveBall(ball);
