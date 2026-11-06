@@ -21,12 +21,5 @@ async function setup() {
 }
 
 function mousePressed(){
-  copy(bottomImg, mouseX, mouseY, 20, 20, mouseX, mouseY, 20, 20);
-}
-
-/**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
-*/
-function draw() {
-
+  copy(bottomImg, mouseX, mouseY, 100, 100, mouseX, mouseY, 100, 100);
 }
